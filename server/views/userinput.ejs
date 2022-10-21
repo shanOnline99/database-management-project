@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Registration Form</title>
+</head>
+<body>
+<!-- Container Start -->
+<div id="container">
+  <!-- Form Wrap Start -->
+  <div class="form-wrap">
+    <h1>Sign Up</h1>
+    <p>Just fill in your details</p>
+    <!-- Form Start -->
+    <form>
+      <form action="/api/user/add" method="POST" >
+      <div class="form-group">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname">
+      </div>
+      <div class="form-group">
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div class="form-group">
+        <label for="username">User Name</label>
+        <input type="text" name="username" id="username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+      </div>
+      
+      <div class="form-group">
+        <label for="dob">Date of Birth(YYYY-MM-DD)</label>
+        <input type="date" name="dob" id="dob">
+      </div>
+      <div class="form-group">
+        <label for="NIC">NIC</label>
+        <input type="text" name="NIC" id="NIC">
+      </div>
+      <div class="form-group">
+        <label for="contactNo">Contact Number</label>
+        <input type="number" name="contactNo" id="contactNo">
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address">
+      </div>
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" name="city" id="city">
+      </div>
+      <div class="form-group">
+        <label for="date">Date(YYYY-MM-DD)</label>
+        <input type="date" name="date" id="date">
+      </div>
+      
+        <input type="hidden" value="%= data.adduser%>" name="id">
+        <button class="btn" type="submit">Sig Up</button>
+      
+      <p class="bottom-text">
+        By Clicking the Sign Up Button, you agree to our
+        <a href="#">Term & Conditions</a> and <a href="#">Primary Policy</a>
+      </p>
+    </form>
+    <!-- Form Close -->
+  </div>
+  <!-- Form Wrap Close -->
+  <footer>
+    <p>Already Have an Account? <a href="#">Login Here</a></p>
+  </footer>
+</div>
+<!-- Container Close -->
+
+
+</body>
+</html>

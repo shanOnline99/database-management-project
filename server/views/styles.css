@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+  
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+--main-color: #0984e3;
+--seocnd-color: #74b9ff;
+--text-color: #2d3436;
+--gradient: linear-gradient(#0984e3,#74b9ff);
+}
+
+/*scroll bar */
+html::-webkit-scrollbar{
+    width: 0.5rem;
+}
+html::-webkit-scrollbar-track{
+   background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+   background: var(--main-color);
+   border-radius: 5rem;
+}
+section{
+    padding: 50px 100px;
+}
+header{
+    position: rlax;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #dfe6e9;
+    padding: 15px 100px ;
+}
+.navbar{
+    display: flex;
+}
+.navbar li{
+    position: relative;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color:var(--text-color);
+    font-weight:500;
+}
+.navbar a:hover{
+    background-color: #74b9ff;
+  transition: 1s;
+}
+.button .sign-in {
+    background: #0984e3;
+    color: #dfe6e9;
+    border-radius: 0.5rem;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    
+    
+
+}
+.text h1{
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+.text span{
+    color: var(--main-color);
+}
+.text p{
+    margin: 00.5rem 0 1rem;
+}
+.heading{
+    text-align: center;
+}
+
+.heading span{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.heading h1{
+    font-size: 2rem;
+}
+.rent-container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    gap: 1rem;
+    margin-top: 2rem ;
+}
+.vehicle-container{
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+  gap: 1rem;
+  margin-top: 2rem;  
+}
+.vehicle-container .box{
+    padding: 10px;
+    border-radius: 1rem;
+
+}
+.vehicle-container .box .boximg{
+    width: 100px;
+    height: 200px;
+}
+.vehicle-container .box .boximg .img{
+   width: 100%;
+   height: 200%;
+   border-radius: 1rem;
+   object-fit: cover;
+   object-position: center; 
+
+}
